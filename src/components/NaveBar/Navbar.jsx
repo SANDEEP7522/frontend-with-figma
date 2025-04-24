@@ -5,7 +5,7 @@ import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuIte
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center p-4 bg-gray-100 border-b">
+    <div className="flex justify-between items-center p-4 bg-gray-100 border-b z-50 sticky top-0 left-0 right-0">
       {/* Left Section: Go Esc */}
       <Button variant="outline" className="flex items-center">
         <span className="mr-2">&lt; Go Esc</span>
