@@ -2,7 +2,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
-import { Dashboard } from "../Dashboard/Dashboard";
+import { Dashboard } from "../../Pages/Dashboard/Dashboard";
 import {
   BugIcon,
   Clipboard,
