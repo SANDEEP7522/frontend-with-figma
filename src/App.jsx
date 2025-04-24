@@ -1,13 +1,12 @@
-
-import './App.css';
-import { Button } from '@/components/ui/button';
+import "./App.css";
+import { Home } from "./Home/Home";
 
 function App() {
   return (
     <div>
-       <Button>Click me</Button>
+      <Home />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

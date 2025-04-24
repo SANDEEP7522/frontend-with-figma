@@ -1,7 +1,12 @@
+
+import Navbar from "@/components/NaveBar/Navbar";
+import { Sidebar } from "@/components/SideeBar/Sidebar";
+
 export const Home = () => {
      return (
           <div>
-               <h1>Home</h1>
+               <Navbar />
+               <Sidebar />
           </div>
      );
 };
