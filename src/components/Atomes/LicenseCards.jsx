@@ -1,5 +1,5 @@
-import { Card, CardContent } from "@/components/ui/card"
-import { Lock } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card";
+import { NotebookPen } from "lucide-react";
 
 const licenses = [
   {
@@ -32,15 +32,17 @@ const licenses = [
     expiry: "24-09-2025",
     status: "Active",
   },
-]
+];
 
 export default function LicenseCards() {
   return (
     <div className="p-4">
-       <button className="text-sm text-blue-600 hover:underline bottom-2 bg-gray-200 rounded-lg p-1">← Go Esck</button>
-        
+      <button className="text-sm text-blue-600 hover:underline bottom-2 bg-gray-200 rounded-lg p-1">
+        ← Go Esck
+      </button>
+
       <div className="flex items-center mt-5 mb-8 gap-4">
-      <h1 className="text-sm font-semibold">Dashboard</h1>
+        <h1 className="text-sm font-semibold">Dashboard</h1>
         <h1 className="text-sm font-semibold">Autodialer</h1>
       </div>
 
@@ -48,7 +50,7 @@ export default function LicenseCards() {
         {licenses.map((license, index) => (
           <Card key={index} className="bg-green-50 text-sm p-2">
             <CardContent className="flex flex-col gap-1">
-              <Lock className="h-4 w-4 mb-1 text-gray-600" />
+              <NotebookPen className="h-4 w-4 mb-1 text-gray-600" />
               <h2 className="font-semibold">{license.title}</h2>
               <p>License Count: {license.count}</p>
               <p>Expiry: {license.expiry}</p>
@@ -58,5 +60,5 @@ export default function LicenseCards() {
         ))}
       </div>
     </div>
-  )
+  );
 }
